@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Fixed School Mosreg",
+    "version": "1.0.0",
+    "description": "Изменённая вёрстка на школьном портале",
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://school.mosreg.ru/*","https://schools.school.mosreg.ru/*"],
+            "js": [ "app.js" ],
+            "css": ["newCss.css"],
+            "run_at":"document_end"
+        }
+    ]
+ }
